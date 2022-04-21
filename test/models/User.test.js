@@ -11,4 +11,9 @@ describe("Unit Test ", () => {
     const user = new User(1, "Sarai", "SaraiMV", "Bio");
     expect(user.dateCreated).not.toBeUndefined();
   });
+
+  test("Case 3: Adding getters", () => {
+    const user = new User(1, "Sarai", "SaraiMV", "Bio");
+    expect(user.getUsername).toBe("Sarai");
+  });
 });
