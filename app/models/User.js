@@ -7,8 +7,12 @@ class User {
     this.dateCreated = new Date();
     this.lastUpdated = new Date();
   }
-  get getUsername(){
-      return this.username
+  get getUsername() {
+    return this.username;
+  }
+
+  set setUsername(newUsername) {
+    this.username = newUsername;
   }
 }
 
