@@ -16,4 +16,10 @@ describe("Unit Test ", () => {
     const user = new User(1, "Sarai", "SaraiMV", "Bio");
     expect(user.getUsername).toBe("Sarai");
   });
+
+  test("Case 4: Adding setters", () => {
+    const user = new User(1, "Sarai", "SaraiMV", "Bio");
+    user.setUsername = "Sara";
+    expect(user.username).toBe("Sara");
+  });
 });
